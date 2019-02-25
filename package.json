@@ -1,0 +1,48 @@
+{
+  "name": "npm-dts-webpack-plugin",
+  "version": "1.0.0",
+  "description": "Webpack plugin generating single dts file for bundling TypeScript NPM packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests are implemented as of now\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vytenisu/npm-dts-webpack-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "dts",
+    "npm",
+    "package",
+    "ts",
+    "TypeScript",
+    "tsc",
+    "index.d.ts",
+    "single",
+    "file",
+    "bundle",
+    "concatenate",
+    "simple",
+    "auto",
+    "generator",
+    "vytenis",
+    "urbonavicius",
+    "vytenisu",
+    "WhiteTurbine",
+    "Whitend"
+  ],
+  "author": {
+    "name": "Vytenis Urbonavičius",
+    "url": "https://github.com/vytenisu"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vytenisu/npm-dts-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/vytenisu/npm-dts-webpack-plugin",
+  "dependencies": {
+    "npm-dts": "^1.1.5",
+    "tmp": "0.0.33"
+  }
+}
