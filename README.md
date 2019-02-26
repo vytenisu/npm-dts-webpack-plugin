@@ -30,6 +30,22 @@ module.exports = {
 }
 ```
 
+You can also choose to customize behavior by providing options supported by _npm-dts_ module:
+
+```
+const NpmDtsPlugin = require('npm-dts-webpack-plugin')
+
+module.exports = {
+  ......
+  plugins: [
+    new NpmDtsPlugin({
+      logLevel: 'debug'
+    })
+  ],
+  ......
+}
+```
+
 ## Contribution
 
 Contribution is welcome in a form of pull requests and issues.

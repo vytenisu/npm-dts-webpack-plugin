@@ -1,33 +1,24 @@
 var Generator = require('npm-dts').Generator;
 
-var tmp = require('tmp');
-var path = require('path');
-
 const plugin = {
   name: 'NpmDtsPlugin'
 };
 
 module.exports = class NpmDtsPlugin {
+  constructor(options) {
+    this.options = options || {};
+  }
+
   apply(compiler) {
+    var _options = this.options;
+
     compiler.hooks.afterEmit.tap(plugin, function() {
-      tmp.dir(function(err, tmp, removeTmp) {
-        if (err) throw err;
+      setTimeout(function() {
+        var generator = new Generator(_options, true, true);
 
-        var generator = new Generator(
-          {tmp: path.resolve(tmp, 'npm-dts')},
-          true,
-          true
-        );
-
-        generator
-          .generate()
-          .then(() => {
-            removeTmp();
-          })
-          .catch(function(e) {
-            removeTmp();
-            throw e;
-          });
+        generator.generate().catch(function(e) {
+          throw e;
+        });
       });
     });
   }
