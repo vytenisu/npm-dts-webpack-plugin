@@ -45,7 +45,3 @@ module.exports = {
   ......
 }
 ```
-
-## Contribution
-
-Contribution is welcome in a form of pull requests and issues.
