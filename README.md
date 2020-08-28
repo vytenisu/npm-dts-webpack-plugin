@@ -48,12 +48,12 @@ module.exports = {
 
 ### Supported options
 
-| Option   | Description                                                                                                                                                                                      |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| entry    | Allows changing main _src_ file from _index.ts_ to something else.                                                                                                                               |
-| force    | Ignores non-critical errors and attempts to at least partially generate typings (disabled by default).                                                                                           |
-| logLevel | Log level (error, warn, info, verbose, debug) (defaults to "info").                                                                                                                              |
-| output   | Overrides recommended output target to a custom one (defaults to "index.d.ts").                                                                                                                  |
-| root     | NPM package directory containing package.json (defaults to current working directory).                                                                                                           |
-| tmp      | Directory for storing temporary information (defaults to OS-specific temporary directory). Note that tool completely deletes this folder once finished.                                          |
-| tsc      | Passed through additional TSC options (defaults to ""). Note that they are not validated or checked for suitability. When passing through CLI it is recommended to surround arguments in quotes. |
+| Option   | Description                                                                                                                                             |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| entry    | Allows changing main _src_ file from _index.ts_ to something else.                                                                                      |
+| force    | Ignores non-critical errors and attempts to at least partially generate typings (disabled by default).                                                  |
+| logLevel | Log level (error, warn, info, verbose, debug) (defaults to "info").                                                                                     |
+| output   | Overrides recommended output target to a custom one (defaults to "index.d.ts").                                                                         |
+| root     | NPM package directory containing package.json (defaults to current working directory).                                                                  |
+| tmp      | Directory for storing temporary information (defaults to OS-specific temporary directory). Note that tool completely deletes this folder once finished. |
+| tsc      | Passed through additional TSC options (defaults to ""). Note that they are not validated or checked for suitability.                                    |
