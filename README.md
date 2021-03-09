@@ -2,7 +2,7 @@
 
 This WebPack plugin generates single _index.d.ts_ file for whole _NPM_ package.
 
-It allows creating a bundled _NPM_ library packages without _TypeScript_ sources and yet still keeping code suggestions wherever these libraries are imported.
+It allows creating bundled _NPM_ library packages without _TypeScript_ sources and yet still keeping code suggestions wherever these libraries are imported.
 
 _TypeScript_ picks up _index.d.ts_ automatically.
 
