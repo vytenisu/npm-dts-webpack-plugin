@@ -50,7 +50,7 @@ module.exports = {
 
 | Option   | Description                                                                                                                                             |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| entry    | Allows changing main _src_ file from _index.ts_ to something else.                                                                                      |
+| entry    | Allows changing main _src_ file from _index.ts_ to something else. It can also be declared as a path, relative to root.                                 |
 | force    | Ignores non-critical errors and attempts to at least partially generate typings (disabled by default).                                                  |
 | logLevel | Log level (error, warn, info, verbose, debug) (defaults to "info").                                                                                     |
 | output   | Overrides recommended output target to a custom one (defaults to "index.d.ts").                                                                         |
